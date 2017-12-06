@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "773696446019",
+    "firebase_url": "https://vcoin-ebc52.firebaseio.com",
+    "project_id": "vcoin-ebc52",
+    "storage_bucket": "vcoin-ebc52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773696446019:android:ddf60d1f1a5ecea3",
+        "android_client_info": {
+          "package_name": "com.hdmedia.VCoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773696446019-sr2tn96pqu2m50mf469v6knvkbrpqp6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMvYQG2rVPFekCJGC2E3LQJNcE0kGbFJo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

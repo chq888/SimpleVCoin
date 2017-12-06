@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Domain.CoinRate.CoinRate>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Link.Name)*@
+            Liên kết
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Rate)*@
+            Tỉ giá
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.CreatedDate)*@
+            Ngày Tạo
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.CreatedBy)*@
+            Người Tạo
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.UpdatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UpdatedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActived)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsDeleted)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Link.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedBy)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.UpdatedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UpdatedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsActived)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsDeleted)
+        </td>*@
+        <td>
+            @Html.ActionLink("Chỉnh sửa", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
